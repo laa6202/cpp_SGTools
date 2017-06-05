@@ -14,7 +14,7 @@ using namespace std;
 using namespace cv;
 
 
-String fn0 = "t10/test2.bmp";
+String fn0 = "t10/Sat Jun 03 15-59-00.bmp";
 
 
 int main() {
