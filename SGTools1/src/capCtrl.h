@@ -25,6 +25,6 @@ void set_cap_exp(VideoCapture cap);
 void set_cap_hue(VideoCapture cap);
 void set_cap_gain(VideoCapture cap);
 void set_cap_exp(VideoCapture cap);
-
+void set_default(VideoCapture cap);
 
 #endif /* CAPCTRL_H_ */

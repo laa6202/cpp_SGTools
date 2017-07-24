@@ -33,7 +33,7 @@ int main() {
 
 
 
-	VideoCapture cap(0);
+	VideoCapture cap(1);
 	if(!cap.isOpened()){
 		cout << "Can not open capture!" << endl;
 		exit(-1);
@@ -93,6 +93,9 @@ int main() {
 		}
 		if(key == 'e'){
 			set_cap_exp(cap);
+		}
+		if(key == 'd'){
+			set_default(cap);
 		}
 	}
 

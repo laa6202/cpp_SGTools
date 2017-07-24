@@ -25,7 +25,7 @@ void get_inf(VideoCapture cap){
 	cout << "(H)cap hue = " << hue <<"\t";
 	cout << "(G)cap gain = " << gain <<"\t";
 	cout << "(E)cap exp = " << exp <<endl;
-	cout << "show information press (I), save photo press (R),quit press (Q)."
+	cout << "show information press (I), default press (D),save photo press (R),quit press (Q)."
 			<< endl << endl;;
 }
 
@@ -78,4 +78,15 @@ void set_cap_exp(VideoCapture cap){
 	exp += 10;
 	exp = (exp >=100) ? (exp-100 ) : exp;
 	cap.set(CV_CAP_PROP_EXPOSURE,exp);
+}
+
+
+void set_default(VideoCapture cap){
+
+	cap.set(CV_CAP_PROP_BRIGHTNESS,20);
+	cap.set(CV_CAP_PROP_CONTRAST,20);
+	cap.set(CV_CAP_PROP_SATURATION,50);
+	cap.set(CV_CAP_PROP_HUE,18);
+	cap.set(CV_CAP_PROP_GAIN,18);
+	cap.set(CV_CAP_PROP_EXPOSURE,15);
 }
